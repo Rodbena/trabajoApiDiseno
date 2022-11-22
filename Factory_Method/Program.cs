@@ -9,17 +9,17 @@ namespace MetodoFabrica02
         {
             string dato;
             int dinero;
-            IVehiculo vehiculo;
-            Console.WriteLine("Cuanto dinero tienes para tu vehiculo?");
+            IComputadora computadora;
+            Console.WriteLine("Cuanto dinero tienes para tu computadora?");
             //dato = Console.ReadLine();
             dato = "1000000";
             dinero = Convert.ToInt32(dato);
             // Obtenemos el vehiculo de la fabrica
-            vehiculo = CCreador.MetodoFabrica(dinero);
-            vehiculo.Encender();
-            vehiculo.Acelerar();
-            vehiculo.Frenar();
-            vehiculo.Girar();
+            computadora = CCreador.MetodoFabrica(dinero);
+            computadora.Encender();
+            computadora.Trabajar();
+            computadora.Apagar();
+            computadora.CambiarComponentes();
         }
     }
 }

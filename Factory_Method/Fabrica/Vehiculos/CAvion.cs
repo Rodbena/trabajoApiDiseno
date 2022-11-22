@@ -1,8 +1,8 @@
 namespace MetodoFabrica02.Fabrica
 {
-    internal class CAvion : IVehiculo
+    internal class CDesktop : IComputadora
     {
-        public void Acelerar()
+        public void Trabajar()
         {
             throw new NotImplementedException();
         }
@@ -12,12 +12,12 @@ namespace MetodoFabrica02.Fabrica
             throw new NotImplementedException();
         }
 
-        public void Frenar()
+        public void Apagar()
         {
             throw new NotImplementedException();
         }
 
-        public void Girar()
+        public void CambiarComponentes()
         {
             throw new NotImplementedException();
         }

@@ -2,13 +2,13 @@ namespace MetodoFabrica02.Fabrica.Creadores
 {
     internal class CCreador
     {
-        internal static IVehiculo MetodoFabrica(int dinero)
+        internal static IComputadora MetodoFabrica(int dinero)
         {
-            IVehiculo temp = null;
+            IComputadora temp = null;
 
             if (dinero > 1000)
             {
-                temp = new CAvion();
+                temp = new CDesktop();
             }
             return temp;
         }
