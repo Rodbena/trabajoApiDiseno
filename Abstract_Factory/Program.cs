@@ -9,13 +9,13 @@ namespace Patrones.AbstractFactory
             IFabrica mifabrica = new FabricaQuimica();
             mifabrica.crearProducto();
 
-            IProductoLeche _leche_ = mifabrica.ObtenerProductoLeche;
+            IProductoLimon _limon_ = mifabrica.ObtenerProductoLimon;
             IProductoSaborizante _sabor_ = mifabrica.ObtenerSabor;
 
-            _leche_.producir();
-            _leche_.obtenerDatos();
+            _limon_.producir();
+            _limon_.obtenerDatos();
 
-            Console.WriteLine("_Mi malteada es de {0} y {1}", _leche_.obtenerDatos(), _sabor_.informacion());
+            Console.WriteLine("_Mi limonada es de {0} y {1}", _limon_.obtenerDatos(), _sabor_.informacion());
             Console.WriteLine("---");
             
 
@@ -24,13 +24,13 @@ namespace Patrones.AbstractFactory
             mifabrica = new FabricaNatural();
             mifabrica.crearProducto();
 
-            _leche_ = mifabrica.ObtenerProductoLeche;
+            _limon_ = mifabrica.ObtenerProductoLimon;
             _sabor_ = mifabrica.ObtenerSabor;
 
-            _leche_.producir();
-            _leche_.obtenerDatos();
+            _limon_.producir();
+            _limon_.obtenerDatos();
 
-            Console.WriteLine("-Mi malteada es de {0} y {1}", _leche_.obtenerDatos(), _sabor_.informacion());
+            Console.WriteLine("-Mi limonada es de {0} y {1}", _limon_.obtenerDatos(), _sabor_.informacion());
 
 
         }

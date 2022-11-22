@@ -2,16 +2,16 @@ namespace Patrones.AbstractFactory
 {
 
 
-    class SaborChocolate : IProductoSaborizante
+    class SaborLimon : IProductoSaborizante
     {
         public string informacion()
         {
-            return "Chocolate Cacao Rico";
+            return "Limon natural";
         }
 
         public void obtener()
         {
-            Console.WriteLine("Se produce ChocoSD23");
+            Console.WriteLine("Se produce LimonSD23");
         }
     }
 }

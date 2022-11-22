@@ -2,16 +2,16 @@ namespace Patrones.AbstractFactory
 {
 
 
-    class LecheVaca : IProductoLeche
+    class LimonNatural : IProductoLimon
     {
         public string obtenerDatos()
         {
-            return "Leche de Vaca natural, 250ml";
+            return "Ague de Limon, 250ml";
         }
 
         public void producir()
         {
-            Console.WriteLine("Ordeñar vaca en la granja");
+            Console.WriteLine("Ordeñar limones en la granja");
         }
     }
 }

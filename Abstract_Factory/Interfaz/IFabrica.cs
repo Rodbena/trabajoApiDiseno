@@ -4,7 +4,7 @@ namespace Patrones.AbstractFactory
     interface IFabrica
     {
         void crearProducto();
-        IProductoLeche ObtenerProductoLeche { get; }
+        IProductoLimon ObtenerProductoLimon { get; }
         IProductoSaborizante ObtenerSabor { get; }
         
 

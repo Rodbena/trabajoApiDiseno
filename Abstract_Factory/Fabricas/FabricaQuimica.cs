@@ -3,12 +3,12 @@ namespace Patrones.AbstractFactory
 {
     class FabricaQuimica : IFabrica
     {
-        private IProductoLeche leche;
+        private IProductoLimon limon;
         private IProductoSaborizante sabor;
         
-        public IProductoLeche ObtenerProductoLeche
+        public IProductoLimon ObtenerProductoLimon
         {
-            get { return leche; }
+            get { return limon; }
         }
 
         public IProductoSaborizante ObtenerSabor
@@ -18,9 +18,9 @@ namespace Patrones.AbstractFactory
 
         public void crearProducto()
         {
-            Console.WriteLine("Estamos produciendo tu malteada");
-            leche = new LecheVaca();
-            sabor = new SaborChocolate();
+            Console.WriteLine("Estamos produciendo tu limonada");
+            limon = new LimonNatural();
+            sabor = new SaborLimon();
         }
     }
 }

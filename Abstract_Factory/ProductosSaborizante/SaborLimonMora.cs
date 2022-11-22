@@ -2,16 +2,16 @@ namespace Patrones.AbstractFactory
 {
 
 
-    class SaborVainilla : IProductoSaborizante
+    class SaborLimonMora : IProductoSaborizante
     {
         public string informacion()
         {
-            return "Vainilla de palo";
+            return "Limon con Mora Azul";
         }
 
         public void obtener()
         {
-            Console.WriteLine("Se produce Vainilla12WER");
+            Console.WriteLine("Se produce LimonMora12WER");
         }
     }
 }

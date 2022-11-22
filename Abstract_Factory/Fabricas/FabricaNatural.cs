@@ -3,12 +3,12 @@ namespace Patrones.AbstractFactory
 {
     class FabricaNatural : IFabrica
     {
-        private IProductoLeche leche;
+        private IProductoLimon limon;
         private IProductoSaborizante sabor;
        
-        public IProductoLeche ObtenerProductoLeche
+        public IProductoLimon ObtenerProductoLimon
         {
-            get { return leche; }
+            get { return limon; }
         }
 
         public IProductoSaborizante ObtenerSabor
@@ -21,26 +21,26 @@ namespace Patrones.AbstractFactory
             Console.ForegroundColor = ConsoleColor.Green;
             string selection = "";
             Console.WriteLine("Estamos creando tu bebida");
-            Console.WriteLine("1) Almendra\n2)Coco\n");
+            Console.WriteLine("1) Natural\n2)Genetico\n");
             selection = "2";
 
             switch (selection)
             {
                 case "1":
-                    leche = new LecheAlmendras();
+                    limon = new LimonNoNatural();
                     break;
                 
                 case "2":
-                    leche = new LecheCoco();
+                    limon = new LimonGenetico();
                 break;
                 
                 default:
-                    leche = new LecheCoco();
+                    limon = new LimonGenetico();
             }
 
-            leche.producir();
+            limon.producir();
             Console.WriteLine("Ahora extraemos el sabor");
-            sabor = new SaborVainilla();
+            sabor = new SaborLimonMora();
             sabor.obtener();
         }
     }
