@@ -2,21 +2,21 @@ namespace Builder03
 {
     internal class Producto
     {
-        private IMotor motor;
-        private ICarroceria carroceria;
-        private ILlantas llantas;
+        private ICPU cpu;
+        private IVentiladores ventilador;
+        private IHardDrive hardDrive;
 
-        internal void ColocarMotor(IMotor _motor)
+        internal void Colocarcpu(ICPU _cpu)
         {
-            motor = _motor;
-            Console.WriteLine("Se ha colocado el motor {0} ", motor);
+            cpu = _cpu;
+            Console.WriteLine("Se ha colocado el cpu {0} ", cpu);
         }
 
         
 
-        internal void MostrarAuto()
+        internal void MostrarCompu()
         {
-            Console.WriteLine("motor: {0}", motor);
+            Console.WriteLine("cpu: {0}", cpu);
         }
     }
 }

@@ -4,7 +4,7 @@ namespace Builder03
     {
         internal void Construye(IBuilder _constructor)
         {
-            _constructor.ConstrulleMotor();
+            _constructor.ConstrulleCPU();
         }
     }
 }

@@ -1,28 +1,28 @@
-using static Builder03.IMotor;
+using static Builder03.ICPU;
 
 namespace Builder03
 {
     internal class BuilderNormal : IBuilder
     {
-        private Producto auto = new Producto();
-        public void ConstrulleCarroceria()
+        private Producto compu = new Producto();
+        public void ConstrulleVentiladores()
         {
             throw new NotImplementedException();
         }
 
-        public void ConstrulleLLantas()
+        public void ConstrulleHardDrive()
         {
             throw new NotImplementedException();
         }
 
-        public void ConstrulleMotor()
+        public void ConstrulleCPU()
         {
-            auto.ColocarMotor(new MotorBasico());
+            compu.ColocarMotor(new MotorBasico());
         }
 
         internal Producto ObtenProducto()
         {
-            return auto;
+            return compu;
         }
     }
 }

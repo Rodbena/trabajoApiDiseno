@@ -1,21 +1,21 @@
 namespace Builder03
 {
-    internal interface IMotor
+    internal interface ICPU
     {
         string especificaciones();
 
-        class MotorBasico : IMotor
+        class MotorBasico : ICPU
         {
             public string especificaciones()
             {
-                return "4 cilindors";
+                return "4 RAM";
             }
         }
-        class MotorGrande : IMotor
+        class MotorGrande : ICPU
         {
             public string especificaciones()
             {
-                return "8 cilindors";
+                return "8 RAM";
             }
         }
     }

@@ -1,23 +1,23 @@
 namespace Builder03
 {
-    interface ILlantas
+    interface IHardDrive
     {
         string informacion();
     }
 
-    class llantas12 : ILlantas
+    class hardDrive12 : IHardDrive
     {
         public string informacion()
         {
-            return "14 pulgadas";
+            return "1 Tera";
         }
     }
 
-    class llantasSuper : ILlantas
+    class hardDriveGrande : IHardDrive
     {
         public string informacion()
         {
-            return "20 pulgadas";
+            return "20 Teras";
         }
     }
 

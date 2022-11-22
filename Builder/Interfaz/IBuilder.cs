@@ -2,9 +2,9 @@ namespace Builder03
 {
     interface IBuilder
     {
-        void ConstrulleMotor();
-        void ConstrulleCarroceria();
-        void ConstrulleLLantas();
+        void ConstrulleCPU();
+        void ConstrulleVentiladores();
+        void ConstrulleHardDrive();
         
     }
 

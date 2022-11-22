@@ -1,22 +1,22 @@
 namespace Builder03
 {
-    interface ICarroceria
+    interface IVentiladores
     {
         string caracteristicas();
     }
 
-    class CarroceriaBasica : ICarroceria
+    class CarroceriaBasica : IVentiladores
     {
         public string caracteristicas()
         {
-            return "carroceria de metal";
+            return "ventilador fisico";
         }
     }
-    class CarroceriaEspecial : ICarroceria
+    class CarroceriaEspecial : IVentiladores
     {
         public string caracteristicas()
         {
-            return "carroceria de fibra";
+            return "ventilador de agua";
         }
     }
 
