@@ -5,18 +5,18 @@ namespace Adapter
 {
     class Myclient
     {
-        private ImovilXMLTarget _movilXmlTarget;
-        private ImovilJSONOrigin _movilJSONOrigin;
+        private ImovilXMLTarget _compuXmlTarget;
+        private ImovilJSONOrigin _compuJSONOrigin;
 
-        public Myclient(ImovilXMLTarget movilXmlTarget, ImovilJSONOrigin movilJSONOrigin)
+        public Myclient(ImovilXMLTarget compuXmlTarget, ImovilJSONOrigin movilJSONOrigin)
         {
-            _movilXmlTarget = movilXmlTarget;
-            _movilJSONOrigin = movilJSONOrigin;
+            _compuXmlTarget = movilXmlTarget;
+            _compuJSONOrigin = movilJSONOrigin;
         }
 
-        public XmlDocument GetMovilData()
+        public XmlDocument GetCompuData()
         {
-            return _movilXmlTarget.GetMobilesXMLSpecifications(_movilJSONOrigin);
+            return _compuXmlTarget.GetComputadorasXMLSpecifications(_compuJSONOrigin);
         }
     }
 }

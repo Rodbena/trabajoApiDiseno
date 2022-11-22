@@ -4,16 +4,16 @@ namespace Adapter
 {
     interface ImovilJSONOrigin
     {
-        String GetMobilesXMLSpecifications();
+        String GetComputadorasXMLSpecifications();
     }
     interface ImovilXMLTarget
     {
-        XmlDocument GetMobilesXMLSpecifications(ImovilJSONOrigin movilJSONAdapter);
+        XmlDocument GetComputadorasXMLSpecifications(ImovilJSONOrigin movilJSONAdapter);
     }
 
     interface ImovilMP3Target
     {
-        XmlDocument GetMobilesXMLSpecifications(ImovilJSONOrigin movilJSONAdapter);
+        XmlDocument GetComputadorasXMLSpecifications(ImovilJSONOrigin movilJSONAdapter);
     }
 
 }

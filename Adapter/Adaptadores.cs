@@ -3,32 +3,32 @@ using Newtonsoft.Json;
 
 namespace Adapter
 {
-    class ImovilJSONAdapter : ImovilJSONOrigin
+    class IcompuJSONAdapter : ImovilJSONOrigin
     {
-        public string GetMobilesXMLSpecifications()
+        public string GetComputadorasXMLSpecifications()
         {
-            List<Movil> moviles = new List<Movil>();
-            moviles.Add(new Movil
+            List<Compu> computadoras = new List<Compu>();
+            computadoras.Add(new Compu
             {
-                modelo = "Iphone 13",
+                modelo = "Windows",
                 costo = 345.00
             });
-            moviles.Add(new Movil
+            computadoras.Add(new Compu
             {
-                modelo = "Iphone 14",
+                modelo = "Apple",
                 costo = 345.00
             });
-            dynamic collectionMobiles = new { Apple = moviles };
-            return JsonConvert.SerializeObject(collectionMobiles);
+            dynamic collectionComputadoras = new { Apple = computadoras };
+            return JsonConvert.SerializeObject(collectionComputadoras);
 
         }
     }
     class ImovilXMLAdapter : ImovilXMLTarget
     {
-        public XmlDocument GetMobilesXMLSpecifications(ImovilJSONOrigin movilJSONAdapter)
+        public XmlDocument GetComputadorasXMLSpecifications(ImovilJSONOrigin movilJSONAdapter)
         {
-            string jsonMovil = movilJSONAdapter.GetMobilesXMLSpecifications();
-            XmlDocument doc = JsonConvert.DeserializeXmlNode(jsonMovil, "Mobiles", true);
+            string jsonMovil = movilJSONAdapter.GetComputadorasXMLSpecifications();
+            XmlDocument doc = JsonConvert.DeserializeXmlNode(jsonMovil, "Computadoras", true);
             return doc;
         }
     }

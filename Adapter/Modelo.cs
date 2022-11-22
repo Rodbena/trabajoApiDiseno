@@ -1,6 +1,6 @@
 namespace Adapter
 {
-    class Movil
+    class Compu
     {
         public string modelo { get; set; }
         public double costo { get; set; }

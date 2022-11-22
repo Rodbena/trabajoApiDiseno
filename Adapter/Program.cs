@@ -6,10 +6,10 @@ namespace Adapter
     {
         static void Main(string[] args)
         {
-            Myclient cliente = new Myclient(new ImovilXMLAdapter(), new ImovilJSONAdapter());
-            XmlDocument xml = cliente.GetMovilData();
+            Myclient cliente = new Myclient(new ImovilXMLAdapter(), new IcompuJSONAdapter());
+            XmlDocument xml = cliente.GetCompuData();
 
-            XmlNodeList lista = xml.GetElementsByTagName("Mobiles");
+            XmlNodeList lista = xml.GetElementsByTagName("Computadoras");
             XmlNodeList moviles = ((XmlElement)lista[0]).GetElementsByTagName("Apple");
 
             foreach (System.Xml.XmlElement xEle in moviles)
