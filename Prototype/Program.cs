@@ -18,8 +18,8 @@ namespace Patron.Prototype
             Console.WriteLine("-----");
 
             //Modificamos el estado
-            uno.Nombre = "Sandy";
-            dos.Nombre = "Sergio";
+            uno.Nombre = "Frank";
+            dos.Nombre = "Rodbena";
 
             // verificamos que cada quien tenga su estado
             Console.WriteLine(uno);
@@ -27,16 +27,16 @@ namespace Patron.Prototype
             Console.WriteLine("-----");
 
             //Creamos una instancia
-            CAuto auto = new CAuto("Nissan", 20);
+            CCompu auto = new CCompu("Windows", 20);
 
             //Lo colocamos como prototipo
-            admin.AdicionaPrototipo("Auto", auto);
+            admin.AdicionaPrototipo("Compu", auto);
 
             //Obtenemos un objeto del prototipo anterior
-            CAuto auto2 = (CAuto)admin.ObtenPrototipo("Auto");
+            CCompu auto2 = (CCompu)admin.ObtenPrototipo("Compu");
 
             //Cambiamos el estado
-            auto2.Modelo = "Honda";
+            auto2.Modelo = "Apple";
 
             Console.WriteLine(auto);
             Console.WriteLine(auto2);

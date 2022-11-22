@@ -26,7 +26,7 @@ namespace Patron.Prototype
         {
             return string.Format("{0}", sumatoria * m);
         }
-        public object Clonar()
+        public object Duplicar()
         {
             CValores clon = new CValores();
             clon.M = m;

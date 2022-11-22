@@ -4,6 +4,6 @@ namespace Patron.Prototype
 
 interface IPrototipo
 {
-    Object Clonar();
+    Object Duplicar();
 }
 }

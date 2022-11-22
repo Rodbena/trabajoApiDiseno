@@ -18,7 +18,7 @@ namespace Patron.Prototype
         {
             return string.Format("{0}, {1}", nombre, edad);
         }
-        public object Clonar()
+        public object Duplicar()
         {
             CPersona clon = new CPersona(nombre, edad);
 

@@ -6,7 +6,7 @@ namespace Patron.Prototype
         public CAdminPrototipos()
         {
             //Adicionamos los obj prototipo con los valores iniciales
-            CPersona persona = new CPersona("Ruben", 18);
+            CPersona persona = new CPersona("Rodbena", 23);
             prototipos.Add("Persona", persona);
 
             CValores valores = new CValores(1);
@@ -19,7 +19,7 @@ namespace Patron.Prototype
         }
         public object ObtenPrototipo(string pLlave)
         {
-            return prototipos[pLlave].Clonar();
+            return prototipos[pLlave].Duplicar();
         }
 
     }
